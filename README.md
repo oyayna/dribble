@@ -17,10 +17,6 @@ This project is a clone of the Dribbble website, created as part of my portfolio
 - Upload and share own designs
 - Follow other users
 
-## Screenshots
-![Homepage](/path/to/homepage-screenshot.png)
-![Design Details](/path/to/design-details-screenshot.png)
-
 ## Installation
 1. Clone the repository: `git clone https://github.com/your-username/dribbble-clone.git`
 2. Navigate to the project directory: `cd myworld`
