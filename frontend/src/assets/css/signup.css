@@ -1,0 +1,409 @@
+.main-container {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.auth-sidebar {
+    background: none;
+    color: #fff;
+    width: 400px;
+    height: 100vh;
+}
+
+.auth-sidebar .auth-sidebar-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.auth-sidebar .auth-sidebar-content .auth-sidebar-logo {
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    left: 40px;
+    color: #fff;
+}
+
+.auth-sidebar .auth-sidebar-content .auth-sidebar-logo svg {
+    width: 90px;
+    height: 30px;
+}
+
+.auth-sidebar .auth-sidebar-content .auth-sidebar-video {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.auth-sidebar .auth-sidebar-content .auth-sidebar-credit {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 14px;
+    text-decoration: unset;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+}
+
+.content .auth {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.content .auth .auth-content,
+.content .auth-content-v2 {
+    margin-left: 100px;
+    padding: 30px 60px 0;
+    width: 100%;
+    max-width: 580px;
+}
+
+.content .auth-content-v2 {
+    padding: 85px 60px 0;
+    height: 100%;
+}
+
+.content .auth .auth-content h2 {
+    margin-bottom: 40px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 25px;
+    font-style: normal;
+}
+
+.content .auth .auth-connections {
+    --btn-padding-x: 0;
+    --btn-width: 100%;
+
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.content .auth .auth-content-v3 .auth-connections {
+    --btn-bg-color: #fff;
+    --btn-border-color: #e7e7e9;
+    --btn-text-color: #0d0c22;
+}
+
+.content .auth .auth-content-v3 .auth-connections:hover {
+    --btn-bg-color: #fff;
+    --btn-border-color: #dbdbde;
+}
+
+.content .auth .auth-connections svg {
+    position: relative;
+    top: 2px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+.content .auth .auth-connections:hover {
+    --btn-bg-color: #565564;
+}
+
+.content .auth .divider {
+    height: 1px;
+    margin: 40px 0 40px;
+    padding: 0;
+    overflow: visible;
+    border: none;
+    background-color: #e7e7e9;
+    color: #6e6d7a;
+    text-align: center;
+}
+
+.content .auth .divider::after {
+    content: "or";
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    padding: 0 16px;
+    background: #fff;
+    font: normal 14px / 14px "Mona Sans", "Helvetica Neue", Helvetica, Arial,
+        sans-serif;
+}
+
+.content .auth .auth-content button.btn {
+    --btn-width: 100%;
+    --btn-border-color: #e7e7e9;
+    --btn-bg-color: #fff;
+    --btn-text-color: #0d0c22;
+    
+    font-family: "Madimi One", sans-serif;
+    font-style: normal;
+    border-width: 1.5px;
+    margin-bottom: 40px;
+}
+
+.content .auth .auth-content button.btn:hover {
+    --btn-border-color: #dbdbde;
+}
+
+.content  p ,
+.content .auth .auth-content p {
+    line-height: 18px;
+    text-align: center;
+    margin: 20px 0 0;
+    color: #3d3d4e;
+    font-size: 14px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    cursor: default;
+}
+
+.content .auth .auth-content p a,
+.content  p a {
+    color: #0d0c22;
+    text-decoration: underline;
+}
+
+.content .back-btn {
+    --btn-width: 40px;
+    --btn-height: var(--btn-width);
+    --btn-padding-x: 0;
+    --btn-border-color: #e7e7e9;
+    --btn-border-radius: 50%;
+    --btn-bg-color: #fff;
+    --btn-text-color: #0d0c22;
+    --btn-font-size: 13px;
+    --btn-font-weight: 600;
+
+    position: absolute;
+    top: 18px;
+    left: 40px;
+    font-family: inherit;
+}
+
+.content .back-btn svg {
+    width: 16px;
+    height: 16px;
+    color: #0d0c22;
+}
+
+.content .back-btn:hover {
+    --btn-border-color: #dbdbde;
+}
+
+.content  h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 25px;
+    font-style: normal;
+}
+
+.content  .sign-form {
+    animation: form 1s;
+}
+
+@keyframes form {
+    0% {
+        transform: translate(0, -40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+.content  .form-field {
+    padding: 12px 0;
+}
+
+.content  .handlaerror {
+    display: flex;
+    align-items: center;
+}
+
+.content  .handlaerror svg {
+    margin-top: 8px;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    color: red;
+    fill: currentColor;
+}
+
+.content .handlaerror .label-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.content .handlaerror .label-group a {
+    color: #0d0c22;
+    text-decoration: underline;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    font-style: normal;
+    margin-top: 12px;
+}
+
+.content  label {
+    display: block;
+    margin: 14px 0 4px;
+    color: #0d0c22;
+    font: bold 15px / 24px "Mona Sans", "Helvetica Neue", Helvetica, Arial,
+        sans-serif;
+}
+
+.content  input.text-input {
+    --input-padding-x: 20px;
+    --btn-padding-y: 15px;
+
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.content  p.handlaerror {
+    margin-top: 10px;
+    color: #f55;
+    text-align: left;
+}
+
+.content .auth-content-v2 .form-last-field {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.content .auth-content-v2 input[type="checkbox"] {
+    --input-mr: 12px;
+}
+
+.content .auth-content-v2 input[type="checkbox"]+label {
+    color: #0d0c22;
+    max-width: 350px;
+    font-size: 14px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.content .auth-content-v2 input[type="checkbox"]+label a {
+    color: #0d0c22;
+    text-decoration: underline;
+}
+
+.content  input[type="submit"] {
+    margin-top: 20px;
+    font-family: "Madimi One", sans-serif;
+    font-style: normal;
+}
+
+.content .auth-content-v2 .recaptcha-terms {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 45px;
+    max-width: 300px;
+    color: #9e9ea7;
+    font-size: 14px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    cursor: default;
+}
+
+.content .auth-content-v3 {
+    margin-left: 100px;
+    padding: 30px 60px 0;
+    width: 100%;
+    max-width: 580px;
+}
+
+.content .auth-content-v3 form > p:last-of-type,
+.content .auth .auth-content > p:last-of-type {
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .content {
+        align-items: center;
+    }
+
+    .content .auth .auth-content,
+    .content .auth-content-v2,
+    .content .auth-content-v3 {
+        margin: 0;
+        padding-inline: 20px;
+        max-width: 416px;
+    }
+
+    .content  .form-field {
+        padding-bottom: 0;
+    }
+    .content .auth-content-v2 input[type="checkbox"] {
+        --input-width: 0;
+        --input-height: 0;
+        padding: 10px;
+    }
+    .content .auth2 {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .content .back-btn {
+        left: initial;
+        right: 40px;
+    }
+}
+
+@media only screen and (max-width: 934px) {
+    .main-container .auth-sidebar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .content .back-btn {
+        left: initial;
+        right: 30px;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    .content .auth .auth-content {
+        max-width: 365px;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .content .auth {
+        display: initial;
+    }
+    .content .auth-content-v3 {
+        margin: 0 auto;
+    }
+}
